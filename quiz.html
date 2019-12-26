@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>English Courses - Quiz</title>   
+</head>
+<body>
+    <header>
+        <h1>English Courses</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Quiz</h2>
+        <form method="POST" action="https://formspree.io/moqjlbpk">
+            <fieldset>
+                <legend>Your first quiz</legend>
+                <p>
+                    <label for="your-name">Your name</label>
+                    <input type="text" name="your-name" id="your-name">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label for="dob">Date of birth</label>
+                    <input type="date" name="dob" id="dob" required>
+                </p>
+                <hr>
+
+                <p>
+                    <label for="level">Choose your level</label>
+                    <select id="level" name="level">
+                        <option value="basic">Basic</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </p>
+
+                <fieldset>
+                    <legend>What the reason of learning English?</legend>
+                    <p>
+                        <input type="radio" id="question1" name="reason" value="work-related">
+                        <label for="question1">I need English at work</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="question2" name="reason" value="parents">
+                        <label for="question2">I forced by my parents</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="question3" name="reason" value="passion">
+                        <label for="question3">I really enjoy that language</label>
+                    </p>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+    <footer>2019</footer>
+</body>
+</html>
